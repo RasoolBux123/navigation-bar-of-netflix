@@ -1,0 +1,119 @@
+*{
+
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+
+}
+
+body{
+
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+   
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    flex-direction: column;
+
+
+}
+
+.logo{
+      
+    width: 150px;
+    border: none;
+    text-decoration: none;
+
+    
+}
+
+
+.text{
+
+    text-transform: uppercase;
+}
+
+.open-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.nav{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translate(-100%);
+    transition: 0,4s ease-in-out;
+}
+.nav.visible{
+    transform: translate(0);
+
+}
+.nav-white-visible{
+    transition-delay: 0s;
+}
+
+.nav-white{
+
+    background-color: rgb(20, 7, 7);
+    max-width: 350px;
+    min-width: 280px;
+    width: 60%;
+    transition-delay: .2s;
+}
+.nav-red{
+
+    background-color: rgb(195, 34, 34);
+    width: 95%;
+    transition-delay: .3s;;
+}
+.nav-blue{
+
+    background-color: floralwhite;
+    width: 95%;
+    padding: 40px;
+    position: relative;
+    transition-delay: .1s;
+
+}
+
+.close-btn{
+
+    position: absolute;
+    top:40px;
+    right: 30px;
+    opacity: 0.3;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+.list, li{
+    margin: 20px;
+
+}
+.list , li ,a{
+
+   color: black;
+   font-size: 14px;
+   text-decoration: none;
+   text-transform: uppercase;
+
+
+}
+
+.list ul{
+
+list-style-type: none;
+padding-left: 20px;
+
+}
